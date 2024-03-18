@@ -1,0 +1,66 @@
+cls ( clear screen)
+
+Configuration
+
+git config --system
+git config --global
+git config    (Project level)
+
+
+git config --global user.name "laxman"
+git config --global user.email "abc@gmail.com"
+git config --list
+cd ~
+ls -la
+cat .gitconfig
+git config --global core.editor "atom  --wait"
+git config --global color.ui true
+
+
+
+Initialisation of repository
+
+git init
+ls(list the files in current directory)
+ls -la .git  (Shows .git files)
+cat .git/config
+git add .(All files)
+git add tours* ( file name starts with tours)
+
+git commit -m "message"
+
+
+git help log(commit log)
+
+git log ( all the logs in project)
+git log -n 5 ( shows past 5 commits)
+git log --since=2024-01-01
+git log --author="Laxman"
+git log --grep="Bugfix"(globally searching for regular expressions)
+git log --oneline(shows only first line changes not multiple lines)
+git status ( any modified text )
+git diff (shows the previous change in text)
+git diff --staged(shows only changes in staging area)
+or
+git diff --cached
+git rm filename.txt (to delete file) and git commit 
+git mv file1.txt file2.txt(rename a file or move a file)
+git diff --color-words(shows only changed words color  in file not the unchanged words)
+
+git commit -a ( opens text editor for commit message)
+git commit --all(stages and commits all changes to tracked files)
+git commit -am  " edits in website" ( commit with message)
+
+git show 1ch36g(shavalue) -> shows changes made in file
+git diff sha1..sha2(compare two different version and commits)
+
+git checkout -- index.html ( discard the changes or undo)
+git reset HEAD tours.html ( undo or unstage the files)
+git checkout shavalue --filename (retrieve old versions )
+git revert shavalue(revert a commit)
+git clean -n(tells what it would do but it doesn't remove)
+git clean -f(removes the untracked files)
+git commit --amend ( used to edit the current HEAD)
+git rebase -i HEAD ~n ( to edit the n generation back commit)
+
+
